@@ -10,4 +10,12 @@ class HelloController extends Controller
     {
         return 'こんにちは、セカイ！';
     }
+
+    public function view()
+    {
+        $data = [
+            'msg' => 'こんにちは、セカイのビュー！',
+        ];
+        return view('hello.view', $data);
+    }
 }
